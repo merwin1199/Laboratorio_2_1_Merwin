@@ -1,0 +1,148 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 2.1 - Desarrollo Web</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #174a7e;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        main {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #174a7e;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .info {
+            background-color: #e8f1fa;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        button {
+            background-color: #174a7e;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0d3155;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #555;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                margin: 15px;
+                padding: 18px;
+            }
+
+            header {
+                padding: 20px 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Laboratorio 2.1 - Desarrollo Web</h1>
+        <p>Configuración de herramientas para el desarrollo web</p>
+    </header>
+
+    <main>
+        <section class="info">
+            <h2>Información del estudiante</h2>
+            <p><strong>Nombre:</strong> Merwin Arciniegas Remolina</p>
+            <p><strong>Laboratorio:</strong> 2.1</p>
+            <p><strong>Actividad:</strong> Desarrollo web y control de versiones</p>
+        </section>
+
+        <section>
+            <h2>Objetivo</h2>
+            <p>
+                Aprender a utilizar herramientas para crear, probar y administrar
+                páginas web mediante HTML, CSS, Git y GitHub.
+            </p>
+        </section>
+
+        <section>
+            <h2>Herramientas utilizadas</h2>
+            <ul>
+                <li>Visual Studio Code para escribir y editar código.</li>
+                <li>Google Chrome para probar la página web.</li>
+                <li>Mozilla Firefox para comparar la visualización.</li>
+                <li>Git para controlar las versiones del proyecto.</li>
+                <li>GitHub para almacenar el proyecto en línea.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Desarrollo web</h2>
+            <p>
+                HTML permite organizar el contenido de una página web,
+                mientras que CSS se utiliza para definir su apariencia.
+                Los navegadores permiten comprobar su funcionamiento.
+            </p>
+
+            <button onclick="mostrarMensaje()">Probar página</button>
+            <p id="mensaje"></p>
+        </section>
+
+        <section>
+            <h2>Conclusión</h2>
+            <p>
+                En esta actividad se creó una página web básica y se practicó
+                el uso de herramientas de desarrollo y control de versiones.
+                Estas herramientas ayudan a organizar el trabajo y registrar
+                los cambios realizados en un proyecto.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Laboratorio 2.1 | Merwin Arciniegas Remolina</p>
+    </footer>
+
+    <script>
+        function mostrarMensaje() {
+            document.getElementById("mensaje").textContent =
+                "La página funciona correctamente.";
+            console.log("Prueba de funcionamiento realizada.");
+        }
+    </script>
+</body>
+</html>
+```
